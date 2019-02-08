@@ -4,7 +4,7 @@ AngularJS UI directives Collection by @Arcticoid
 ## Getting started
 Install using Bower:
 
-> bower install ng-dropdown --save
+> bower install Arctic-ui --save
 
 ### Examples:
 
