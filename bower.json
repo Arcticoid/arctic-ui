@@ -1,0 +1,32 @@
+{
+  "name": "arctic-ui",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Arcticoid/arctic-ui",
+  "authors": [
+    "Arcticoid <arcticoid.work@gmail.com>"
+  ],
+  "description": "AngularJS UI directives collection by @Arcticoid",
+  "main": [
+    "dist/js/arctic-ui.js",
+    "dist/css/arctic-ui.css"
+  ],
+  "keywords": [
+    "angular",
+    "angularjs",
+    "autocomplete",
+    "select",
+    "dropdown",
+    "ui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "package.json",
+    "public"
+  ],
+  "dependencies": {
+    "angular": ">= 1.6.4"
+  }
+}
