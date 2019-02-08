@@ -1,4 +1,4 @@
-# arctic-dropdown
+# Arctic-ui
 AngularJS UI directives Collection by @Arcticoid
 
 ## Getting started
