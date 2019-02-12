@@ -14,6 +14,7 @@
     </head>
     <body  style="text-align: center; color: #777" ng-app="myApp">
         <h3>Arctic</h3>
+        <p style="font-size: 10px">Hello. This is arctic-ui demo page.</p>
         <section ng-controller="someCtrl as vm" style="height: 600px;">
 
 
@@ -22,21 +23,30 @@
 
             <div style="width: 500px; height: 100%; margin: 0 auto; background-color: #fbfbfb;" arctic-hover>
 
-                <p>Select</p>
+                <div arctic-hover arctic-main-color="#fbfbfb" arctic-position="bottom" style="width:50px; margin: 50px auto 0">Select</div>
 
                 <div class="form-group arctic-within" style="width: 300px; margin: 0 auto;">
                     <arctic-select arctic-label="Some Label" arctic-data="vm.data" arctic-model="vm.selected" arctic-mask="name" arctic-mask-secondary="secondary"></arctic-select>
                 </div>
 
-                <p>Autocomplete</p>
+                <div arctic-hover arctic-main-color="#fbfbfb" arctic-position="bottom" style="width:100px; margin: 50px auto 0">Autocomplete</div>
+
 
                 <div class="form-group arctic-within" style="width: 300px; margin: 0 auto;">
                     <input id="aaa2" arctic-data="vm.data" arctic-local="1" class="arctic-autocomplete" arctic-model="project" arctic-autocomplete arctic-url="project.getList" arctic-mask="" arctic-mask-secondary="address" ng-model="project.arctic" arctic-placeholder="Start typing ..." placeholder="" type="text" required>
                     <label for="aaa2" class="arctic-label">Some Label</label>
                 </div>
 
+
+
             </div>
 
         </section>
+
+
+        <div style="position: fixed; bottom: 10px; left: calc(50% - 65px)">
+            <p style="font-size: 10px">  Made by myself and for myself ^_^ </p>
+        </div>
+
     </body>
 </html>

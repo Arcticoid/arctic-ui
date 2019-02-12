@@ -40,6 +40,7 @@ div.arctic-select-wrap:hover, div.arctic-select-wrap.active , .active div.arctic
 }
 .arctic-select .arctic-value-holder {
     color: rgb(91, 91, 96);
+    text-align: left;
     font: 400 13.3333px Arial!important;
 }
 .arctic-select .arctic-value-holder::after {
@@ -253,6 +254,8 @@ label.arctic-label {
     overflow-x: hidden;
     text-overflow: ellipsis;
     margin: 0!important;
+    text-align: left;
+    font-size: 14px;
 }
 .arctic-select div, .arctic-list-wrap ul li p, .arctic-list-wrap ul li, .arctic-label {
     user-select: none;

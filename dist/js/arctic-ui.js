@@ -85,7 +85,7 @@
 
                             let li = document.createElement('li');
                             html = '' +
-                                '<p  title="'+item.arctic+'" style="font-size: 13px; margin: 0; padding: 0;">'+item.arctic+'</p>' +
+                                '<p  title="'+item.arctic+'" style="font-size: 14px; margin: 0; padding: 0;">'+item.arctic+'</p>' +
                                 (item.second_arctic ? '<p class="secondary" title="'+item.second_arctic+'">'+item.second_arctic+'</p>' : '<p style="height: 0; margin-bottom: 4px;"></p>') +
                                 '';
 
