@@ -10,7 +10,8 @@
 
     arctic
         .directive('arcticAutocomplete',['$http', '$compile',arcticAutocomplete])
-        .directive('arcticSelect',[arcticSelect]);
+        .directive('arcticSelect',[arcticSelect])
+        .directive('arcticHover',[arcticHover]);
 
 
 
@@ -238,6 +239,32 @@
                     elem[0].childNodes[1].style.maxHeight = (a<maxHeight ? a : maxHeight) + 'px';
                 }
 
+            }
+
+        };
+    }
+
+    function arcticHover() {
+        return {
+            scope: {
+                arcticPosition : '@',
+                arcticMainColor : '@',
+                arcticSecondaryColor : '@',
+                arcticInverse : '@',
+            },
+            restrict: 'A',
+            link: function(scope, elem, attrs) {
+                let a = elem[0],
+                    b = document.createElement('div');
+                a.className += ' arctic-hover';
+                b.className = 'arctic-line';
+                if(scope.arcticMainColor) b.style.backgroundColor = scope.arcticMainColor;
+                b.innerHTML = '<div class="arctic-line-inner'+(scope.arcticInverse ? ' inverse' : '')+'" '+(scope.arcticSecondaryColor ? ' style="background-color: '+scope.arcticSecondaryColor+'!important"' : '')+'></div>';
+                if(scope.arcticPosition === 'bottom' ) {
+                    a.appendChild(b);
+                } else {
+                    a.insertBefore(b, a.firstChild);
+                }
             }
 
         };

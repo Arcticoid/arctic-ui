@@ -261,3 +261,43 @@ label.arctic-label {
     -webkit-user-select: none;
     -o-user-select: none;
 }
+
+.arctic-hover {
+    border-radius: 0;
+}
+
+.arctic-hover .arctic-line .arctic-line-inner:before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.arctic-hover .arctic-line {
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    background-color: #a0abbc;
+}
+
+.arctic-hover .arctic-line .arctic-line-inner {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    transition: width .3s ease, background-color .0s ease;
+    background-color: #1b3761;
+}
+
+.arctic-hover .arctic-line .arctic-line-inner.inverse {
+    width: 100%!important;
+}
+.arctic-hover:hover .arctic-line .arctic-line-inner.inverse, .arctic-hover.active .arctic-line .arctic-line-inner.inverse {
+    width: 0!important;
+    background-color: #1b3761;
+}
+.arctic-hover:hover .arctic-line .arctic-line-inner, .arctic-hover.active .arctic-line .arctic-line-inner {
+    width: 100%;
+    background-color: #1b3761;
+}
